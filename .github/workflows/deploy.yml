@@ -15,5 +15,5 @@ jobs:
 
       - name: Run Bash Script
         run: |
-          docker run -it --rm ubuntu:latest /bin/bash -c "echo 'Ruslan' && echo 'Hurskyi'"
+          docker run  --rm ubuntu:latest /bin/bash -c "echo 'Ruslan' && echo 'Hurskyi'"
 
