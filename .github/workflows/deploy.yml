@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Website to GitHub Pages
 
 on:
   push:
@@ -20,5 +20,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: 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 
-          publish_dir: master
+          github_token: ${{ secrets.GH_PAGES_TOKEN }}
+          publish_dir: .
