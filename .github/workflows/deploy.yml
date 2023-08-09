@@ -21,4 +21,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: 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 
-          publish_dir: ./path/to/dist 
+          publish_dir: master
