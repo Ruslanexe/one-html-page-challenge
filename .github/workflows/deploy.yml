@@ -15,5 +15,11 @@ jobs:
 
       - name: Run Bash Script
         run: |
-          docker run  --rm ubuntu:latest /bin/bash -c "echo 'Ruslan' && echo 'Hurskyi'"
+          docker run --rm ubuntu:latest /bin/bash -c "echo 'Ruslan' && echo 'Hurskyi'"
 
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist  
