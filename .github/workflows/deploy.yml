@@ -15,7 +15,7 @@ jobs:
 
       - name: Run Bash Script
         run: |
-          docker run --rm ubuntu:latest /bin/bash -c "echo 'Ruslan' && echo 'Hurskyi'"
+          docker run --rm ubuntu:latest /bin/bash -c "echo 'Ruslan ' && echo 'Hurskyi'"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
